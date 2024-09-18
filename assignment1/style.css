@@ -1,0 +1,38 @@
+body{
+    background: url(backgroundPic.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin:0;
+    box-sizing: border-box;
+    padding: 0;
+}
+.mainContainer{
+    border:2px solid white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width:30%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    color:rgb(82, 18, 82);
+    border-radius:4rem;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    box-shadow:5px 5px 10px rgb(225, 159, 225),5px 5px 10px rgb(176, 89, 176) inset ;
+}
+@media only screen and (max-width:900px) {
+    .mainContainer{
+      width:70%;
+      height:60px;
+      font-size:12px;  
+    }
+    body{
+        background-size: cover;
+    }
+    
+}
